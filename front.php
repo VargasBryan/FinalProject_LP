@@ -3,13 +3,21 @@
     <title>PHP Test</title>
   </head>
   <body>
+
       <form action="insertar.php" method="POST">
       <form>
             <label for="hoteles">Hoteles:</label>
             <select id="hoteles" name="hoteles">
-                <option value="masculino">hotel 1</option>
-                <option value="femenino">hotel 2</option>
-                <option value="otro">hotel 3</option>
+
+            <?php 
+              include ("conexion.php");
+              foreach($id as $key => $val){
+            ?>
+              <option><?php echo $key;?></option>
+            
+              <?php
+                }
+              ?>
             </select> <br>
 
             <label for="fecha">Fecha:</label>

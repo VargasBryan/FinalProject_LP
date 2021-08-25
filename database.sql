@@ -21,3 +21,4 @@ insert into hotel (nombre,precio) values ("sheraton",350);
 insert into hotel (nombre,precio) values ("oro verde",275);
 
 select * from hotel;
+select * from reserva;
